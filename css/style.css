@@ -501,7 +501,7 @@ h6,
 
 .team-item img {
     width: 100%;
-    height: 350px; /* Reduced from default - adjust this value as needed */
+    height: 325px; /* Reduced from default - adjust this value as needed */
     object-fit: cover;
     object-position: center top;
 }
