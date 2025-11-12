@@ -43,23 +43,29 @@
 
 
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Addtech</h1>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow-sm px-4 px-lg-5 py-lg-2 modern-navbar">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <i class="fa fa-book-reader text-primary fs-3 me-2"></i>
+            <h1 class="m-0 fw-bold text-dark">Addtech</h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="https://www.abcya.com/" class="nav-link">Games</a></li>
+            <li class="nav-item"><a href="#container-xxl py-5" class="nav-link">Classes</a></li>
+            <li class="nav-item"><a href="#container-xxl py-about-us" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#container-xxl contact-us" class="nav-link">Contact Us</a></li>
+            </ul>
+
+            <a href="login.html" class="btn btn-login rounded-pill px-4 py-2 fw-semibold shadow-sm">
+            Login
             </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="https://www.abcya.com/" class="nav-item nav-link">Games</a>
-                    <a href="#container-xxl py-classes" class="nav-item nav-link">Classes</a>
-                    <a href="#container-xxl py-about-us" class="nav-item nav-link" >About Us</a>
-                    <a href="#container-xxl contact-us" class="nav-item nav-link">Contact Us</a>
-                    <a href="login.html" class="nav-item nav-link">Login</a>
-                </div>
-            </div>
+        </div>
         </nav>
         <!-- Navbar End -->
 
@@ -168,75 +174,156 @@
         <!-- Facilities End -->
 
         <!-- Classes Start -->
-        <div class="container-xxl py-5" id = "container-xxl py-classes">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3" id = "mb-3">School Classes</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+        <div class="container-xxl py-5"  id="container-xxl py-5">
+        <div class="container">
+            <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px;"
+            >
+            <h1 class="mb-3">Our Classes</h1>
+            <p>
+                Explore our structured curriculum from Class 1 to Class 8, designed to build strong foundations and inspire lifelong learning.
+            </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+            <!-- Class 1 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class1.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-1.png" alt="Class 1" />
+                    </a>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Art & Drawing</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Color Management</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Athletic & Dance</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-4.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Language & Speaking</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-5.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Religion & History</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-6.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">General Knowledge</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 1</h3>
+                    <p class="text-muted">Foundation for joyful learning begins here</p>
+                </div>
                 </div>
             </div>
+
+            <!-- Class 2 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class2.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-2.png" alt="Class 2" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 2</h3>
+                    <p class="text-muted">Building curiosity through fun and discovery</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Class 3 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class3.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-3.png" alt="Class 3" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 3</h3>
+                    <p class="text-muted">Exploring knowledge with imagination and play</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Class 4 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class4.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-4.png" alt="Class 4" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 4</h3>
+                    <p class="text-muted">Learning with logic, language, and life skills</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Class 5 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class5.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-5.png" alt="Class 5" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 5</h3>
+                    <p class="text-muted">Strengthening concepts for confident learners</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Class 6 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class6.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-6.png" alt="Class 6" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 6</h3>
+                    <p class="text-muted">Transition to deeper understanding and reasoning</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Class 7 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class7.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-7.png" alt="Class 7" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 7</h3>
+                    <p class="text-muted">Developing analytical thinking and creativity</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Class 8 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="class8.html">
+                    <img class="img-fluid rounded-circle" src="img/classes-8.png" alt="Class 8" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Class 8</h3>
+                    <p class="text-muted">Preparing young minds for higher learning ahead</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Fun Facts Card -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                    <a href="fun-facts.html">
+                    <img class="img-fluid rounded-circle" src="img/fun-facts.png" alt="Fun Facts" />
+                    </a>
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5 text-center">
+                    <h3>Fun Facts</h3>
+                    <p class="text-muted">Explore amazing facts and challenges — open for all!</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
         <!-- Classes End -->
 
@@ -304,9 +391,11 @@
         <div class="container-xxl py-5" id = "container-xxl py-about-us">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Popular Teachers</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
-                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <h1 class="mb-3">Founders</h1>
+                    <p>We believe education should be a joyful adventure, not a chore. 
+                        Our EdTech environment combines cinematic, gamified lessons with AI-driven personalization, 
+                        dynamically adapting the learning path for each child from Class 1 to 8, 
+                        thereby fostering innate curiosity, promoting critical thinking, and cultivating a lifelong passion for knowledge that extends far beyond the syllabus.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -432,22 +521,22 @@
                         <h3 class="text-white mb-4">Photo Gallery</h3>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.png" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.png" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.png" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.png" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.png" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.png" alt="">
                             </div>
                         </div>
                     </div>
