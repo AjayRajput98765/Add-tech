@@ -126,7 +126,24 @@ h6,
   transition: all 0.3s ease-in-out;
 }
 
-/*===Nav logo ===*/
+/* === Nav Links === */
+.navbar .nav-link {
+  color: #1c2b33;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 8px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0d6efd;
+  background: rgba(13, 110, 253, 0.08);
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -145,24 +162,6 @@ h6,
   .navbar-logo {
     height: 35px;         /* smaller on mobile for better spacing */
   }
-}
-
-/* === Nav Links === */
-.navbar .nav-link {
-  color: #1c2b33;
-  font-weight: 500;
-  font-size: 1rem;
-  margin: 0 8px;
-  padding: 8px 16px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: #0d6efd;
-  background: rgba(13, 110, 253, 0.08);
 }
 
 /* === Login Button === */
