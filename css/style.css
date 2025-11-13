@@ -99,7 +99,7 @@ h6,
 
 /*** Navbar ***/
 .navbar-logo {
-  height: 60px;           /* Adjust logo height */
+  height: 40px;           /* Adjust logo height */
   width: auto;            /* Maintain aspect ratio */
   margin-right: 8px;      /* Space between logo and text (if any) */
   object-fit: contain;    /* Prevent distortion */
