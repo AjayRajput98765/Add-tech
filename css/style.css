@@ -151,7 +151,7 @@ h6,
 }
 
 .navbar-logo {
-  height: 32px;           /* smaller height for better balance */
+  height: 60px;           /* smaller height for better balance */
   width: auto;
   object-fit: contain;
   margin-right: 8px;      /* optional spacing if text is added */
@@ -160,7 +160,7 @@ h6,
 
 @media (max-width: 992px) {
   .navbar-logo {
-    height: 28px;         /* smaller on mobile for better spacing */
+    height: 35px;         /* smaller on mobile for better spacing */
   }
 }
 
