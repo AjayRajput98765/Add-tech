@@ -98,25 +98,6 @@ h6,
 
 
 /*** Navbar ***/
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  padding: 0; /* removes extra vertical space */
-}
-
-.navbar-logo {
-  height: 32px;           /* smaller height for better balance */
-  width: auto;
-  object-fit: contain;
-  margin-right: 8px;      /* optional spacing if text is added */
-  vertical-align: middle; /* aligns nicely with nav items */
-}
-
-@media (max-width: 992px) {
-  .navbar-logo {
-    height: 28px;         /* smaller on mobile for better spacing */
-  }
-}
 
 /* === Glassmorphic Navbar === */
 .glass-navbar {
@@ -161,6 +142,26 @@ h6,
 .navbar .nav-link.active {
   color: #0d6efd;
   background: rgba(13, 110, 253, 0.08);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0; /* removes extra vertical space */
+}
+
+.navbar-logo {
+  height: 32px;           /* smaller height for better balance */
+  width: auto;
+  object-fit: contain;
+  margin-right: 8px;      /* optional spacing if text is added */
+  vertical-align: middle; /* aligns nicely with nav items */
+}
+
+@media (max-width: 992px) {
+  .navbar-logo {
+    height: 28px;         /* smaller on mobile for better spacing */
+  }
 }
 
 /* === Login Button === */
