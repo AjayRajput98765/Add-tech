@@ -151,7 +151,7 @@ h6,
 }
 
 .navbar-logo {
-  height: 60px;           /* smaller height for better balance */
+  height: 50px;           /* smaller height for better balance */
   width: auto;
   object-fit: contain;
   margin-right: 8px;      /* optional spacing if text is added */
