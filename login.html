@@ -36,14 +36,6 @@
             --dark-color: #103741;
             --text-gray: #6B7280;
             --border-gray: #E5E7EB;
-            --success: #10b981;
-            --error: #ef4444;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
         }
 
         body {
@@ -52,53 +44,38 @@
             min-height: 100vh;
         }
 
-        .navbar-wrapper {
-            background: white;
+        /* ✅ Navbar Styling */
+        .modern-navbar {
+            background-color: #fff !important;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
-        .navbar-brand h1 {
-            color: var(--primary-color) !important;
-            font-weight: 700;
-            font-size: 24px;
-        }
-
-        .navbar-brand i {
-            color: var(--primary-color);
+        .navbar-logo {
+            height: 45px;
+            width: auto;
         }
 
         .nav-link {
             color: #333 !important;
             font-weight: 500;
-            font-size: 15px;
-            transition: all 0.3s ease;
-            position: relative;
-            margin: 0 10px;
+            transition: color 0.3s ease;
         }
 
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-color);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-
+        .nav-link:hover,
         .nav-link.active {
             color: var(--primary-color) !important;
-            font-weight: 600;
         }
 
-        .nav-link:hover {
-            color: var(--primary-color) !important;
+        .btn-login {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff !important;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(254, 93, 55, 0.35);
         }
 
         .auth-section {
@@ -589,23 +566,28 @@
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 navbar-wrapper">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Addtech</h1>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow-sm px-4 px-lg-5 py-lg-2 modern-navbar">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="img/logo.png" alt="Addtech Logo" class="navbar-logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="https://www.abcya.com/" class="nav-link">Games</a></li>
+            <li class="nav-item"><a href="#container-xxl py-5" class="nav-link">Classes</a></li>
+            <li class="nav-item"><a href="#container-xxl py-about-us" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#container-xxl contact-us" class="nav-link">Contact Us</a></li>
+            </ul>
+
+            <a href="login.html" class="btn btn-login rounded-pill px-4 py-2 fw-semibold shadow-sm">
+            Login
             </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="https://www.abcya.com/" class="nav-item nav-link">Games</a>
-                    <a href="index.html#container-xxl py-classes" class="nav-item nav-link">Classes</a>
-                    <a href="index.html#container-xxl py-about-us" class="nav-item nav-link">About Us</a>
-                    <a href="index.html#container-xxl contact-us" class="nav-item nav-link">Contact Us</a>
-                    <a href="login.html" class="nav-item nav-link active">Login</a>
-                </div>
-            </div>
+        </div>
         </nav>
         <!-- Navbar End -->
                     <!-- Right Side - Form -->
